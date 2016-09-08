@@ -36,7 +36,9 @@ Notes:
 
 Images:
 
-![Alt text](images/IMG_1359.JPG?raw=true)
+![](images/IMG_1359.JPG?raw=true)
+![](images/IMG_1361.JPG?raw=true)
+![](images/IMG_1362.JPG?raw=true)
 
 	
 	
