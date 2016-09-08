@@ -5,9 +5,8 @@ Team name: Poseidon
 
 Tip: Don't hardcode IP
 
- - [ ] Create Github project and invite others
- - [ ] Create Xcode project
-
+ - [x] Create Github project and invite others
+ - [x] Create Xcode project
 
 
 Video feed over HTTP
