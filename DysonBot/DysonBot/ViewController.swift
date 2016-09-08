@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 
         payloadToggle = !payloadToggle
 
-
         mqttConfig.onPublishCallback = { messageId in
             NSLog("published (mid=\(messageId))")
         }
