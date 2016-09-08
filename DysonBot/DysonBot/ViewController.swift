@@ -40,10 +40,7 @@ class ViewController: UIViewController {
 
         
     }
-    override func viewDidAppear(_ animated: Bool) {
 
-        
-    }
     
     override func viewDidAppear(_ animated: Bool) {
         if firstTimeAppearing == true {
