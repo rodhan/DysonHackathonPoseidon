@@ -5,17 +5,23 @@ Team name: Poseidon
 
 Tip: Don't hardcode IP
 
+#General 
+
  - [x] Create Github project and invite others
  - [x] Create Xcode project
 
 
-Video feed over HTTP
+#Video feed over HTTP
 
  - [ ] Transform from 360
- - [ ] Get bonus First tweet from camera feed
+ - [x] Get bonus First tweet from camera feed
+ - 
+ 
+#Sensors
+
  - [ ] Read Sensors over MQTT
 
-Controls:
+#Controls:
 
  - [ ] Send commands over MQTT (Left, Right: -4000 -> 4000)
  - [ ] Bonus for first to move robot
