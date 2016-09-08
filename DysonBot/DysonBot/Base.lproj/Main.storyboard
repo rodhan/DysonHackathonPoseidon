@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +19,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5b-ci-Iio">
-                                <frame key="frameInset" minX="108" minY="178" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
                                 <connections>
-                                    <action selector="buttonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zgL-Ho-5PG"/>
+                                    <action selector="leftSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qhc-6Q-nFc"/>
                                 </connections>
-                            </button>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-OU-BNo">
+                                <connections>
+                                    <action selector="rightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="7vE-cC-VR9"/>
+                                </connections>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS9-gW-M8J">
+                                <frame key="frameInset" minX="16" minY="72" width="343" height="541"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="USJ-jy-Tgt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="609" id="6qD-7W-9sK"/>
+                            <constraint firstItem="uIM-OU-BNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Fp-xk-3oM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="USJ-jy-Tgt" secondAttribute="bottom" constant="8" id="Fv7-0u-3Dm"/>
+                            <constraint firstItem="USJ-jy-Tgt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KzO-9D-TRM"/>
+                            <constraint firstItem="uIM-OU-BNo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="My2-Qu-hXz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uIM-OU-BNo" secondAttribute="bottom" constant="617" id="iEC-Ln-Sa7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uIM-OU-BNo" secondAttribute="trailing" id="k9s-kp-0MX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="USJ-jy-Tgt" secondAttribute="trailing" id="pps-kw-4bc"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView360" destination="hS9-gW-M8J" id="XDF-PL-AvZ"/>
+                        <outlet property="leftTrack" destination="USJ-jy-Tgt" id="i65-1n-Dlw"/>
+                        <outlet property="rightTrack" destination="uIM-OU-BNo" id="GgJ-6J-dQe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
