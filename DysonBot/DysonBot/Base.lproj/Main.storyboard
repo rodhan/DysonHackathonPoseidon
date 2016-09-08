@@ -19,26 +19,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
-                                <connections>
-                                    <action selector="leftSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qhc-6Q-nFc"/>
-                                </connections>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-OU-BNo">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-OU-BNo">
+                                <frame key="frameInset" minX="14" minY="56" width="347" height="31"/>
                                 <connections>
                                     <action selector="rightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="7vE-cC-VR9"/>
                                 </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hS9-gW-M8J">
-                                <frame key="frameInset" minX="16" minY="72" width="343" height="541"/>
+                                <frame key="frameInset" minX="16" minY="106" width="343" height="477"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
+                                <connections>
+                                    <action selector="leftSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qhc-6Q-nFc"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="USJ-jy-Tgt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="609" id="6qD-7W-9sK"/>
+                            <constraint firstItem="USJ-jy-Tgt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="578" id="6qD-7W-9sK"/>
                             <constraint firstItem="uIM-OU-BNo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Fp-xk-3oM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="USJ-jy-Tgt" secondAttribute="bottom" constant="8" id="Fv7-0u-3Dm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="USJ-jy-Tgt" secondAttribute="bottom" constant="39" id="Fv7-0u-3Dm"/>
                             <constraint firstItem="USJ-jy-Tgt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KzO-9D-TRM"/>
                             <constraint firstItem="uIM-OU-BNo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="My2-Qu-hXz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uIM-OU-BNo" secondAttribute="bottom" constant="617" id="iEC-Ln-Sa7"/>

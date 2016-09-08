@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView360: UIImageView!
 
     override func viewDidLoad() {
+        
+        // Make the sliders vertical
+//        let trans = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+//        rightTrack.transform = trans;
+//        leftTrack.transform = trans;
+        
         mqttConfig.onPublishCallback = { messageId in
             NSLog("published (mid=\(messageId))")
         }
