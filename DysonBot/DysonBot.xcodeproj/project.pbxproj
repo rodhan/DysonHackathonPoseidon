@@ -16,6 +16,7 @@
 		D85E27CD1D819A3400B693D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85E27CB1D819A3400B693D5 /* LaunchScreen.storyboard */; };
 		D85E27D81D819A3400B693D5 /* DysonBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E27D71D819A3400B693D5 /* DysonBotUITests.swift */; };
 		D897590A1D81C4B30097B8E9 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89759091D81C4B30097B8E9 /* Bot.swift */; };
+		D897590C1D81C8DE0097B8E9 /* DysonBot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D897590B1D81C8DE0097B8E9 /* DysonBot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D85E27D71D819A3400B693D5 /* DysonBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DysonBotUITests.swift; sourceTree = "<group>"; };
 		D85E27D91D819A3400B693D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D89759091D81C4B30097B8E9 /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
+		D897590B1D81C8DE0097B8E9 /* DysonBot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DysonBot.swift; sourceTree = "<group>"; };
 		F64FCC8D86F901AEC4FB3062 /* Pods-DysonBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBotUITests/Pods-DysonBotUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				D85E27CB1D819A3400B693D5 /* LaunchScreen.storyboard */,
 				D85E27CE1D819A3400B693D5 /* Info.plist */,
 				D89759091D81C4B30097B8E9 /* Bot.swift */,
+				D897590B1D81C8DE0097B8E9 /* DysonBot.swift */,
 			);
 			path = DysonBot;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				D85E27C51D819A3300B693D5 /* ViewController.swift in Sources */,
 				D897590A1D81C4B30097B8E9 /* Bot.swift in Sources */,
 				D85E27C31D819A3300B693D5 /* AppDelegate.swift in Sources */,
+				D897590C1D81C8DE0097B8E9 /* DysonBot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
