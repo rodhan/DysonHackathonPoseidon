@@ -19,10 +19,15 @@ Video feed over HTTP
 
 
 Controls:
+
 [] Send commands over MQTT (Left, Right: -4000 -> 4000)
+
 [] Bonus for first to move robot
+
 [] Create initial controller with 2 sliders
+
 [] Create fancy joy stick controller
+
 
 
 Notes:
