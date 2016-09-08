@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if firstTimeAppearing == true {
+            firstTimeAppearing = false
+
             imageView360.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
             imageView360.startUpdates(url: URL(string: "http://\(ipAddress):8080/frame.jpg")!)
         }
