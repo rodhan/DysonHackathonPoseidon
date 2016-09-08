@@ -14,10 +14,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         
-        // Make the sliders vertical
-//        let trans = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
-//        rightTrack.transform = trans;
-//        leftTrack.transform = trans;
+        let increaseOfHitArea : CGFloat = 50.0;
+        let rectLeft = CGRect(x: leftTrack.frame.origin.x, y: leftTrack.frame.origin.y, width: leftTrack.frame.size.width + increaseOfHitArea, height: leftTrack.frame.size.height + increaseOfHitArea)
+        leftTrack.frame = rectLeft
         
         mqttConfig.onPublishCallback = { messageId in
             NSLog("published (mid=\(messageId))")
