@@ -9,17 +9,20 @@ Tip: Don't hardcode IP
 
  - [x] Create Github project and invite others
  - [x] Create Xcode project
+ - [ ] Add configuration for IP Address
 
 
 #Video feed over HTTP
 
+ - [ ] Download and display image
  - [ ] Transform from 360
  - [x] Get bonus First tweet from camera feed
- - 
+
  
 #Sensors
 
  - [ ] Read Sensors over MQTT
+ - [ ] Display proximity alerts
 
 #Controls:
 
