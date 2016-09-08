@@ -15,10 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftTrack: UISlider!
     @IBOutlet weak var imageView360: DysonCameraImageView!
 
-     var backLeftSensorView: UIView!
-     var frontLeftSensorView: UIView!
-     var backRightSensorView: UIView!
-     var frontRightSensorView: UIView!
     
     
     override func viewDidLoad() {
@@ -32,12 +28,8 @@ class ViewController: UIViewController {
         }
 
         mqttClient = MQTT.newConnection(mqttConfig)
-        frontLeftSensorView = UIView(frame: CGRect(x: imageView360.frame.origin.x, y: imageView360.frame.origin.y, width: 100, height: 100))
-        frontLeftSensorView.backgroundColor = UIColor.red
-        self.view.addSubview(frontLeftSensorView)
-        arcDrawing().drawArc(position: Position.frontLeft, range: 50, masterView:self.frontLeftSensorView)
 
-
+        
         
     }
 
