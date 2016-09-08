@@ -19,6 +19,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
+                                <color key="thumbTintColor" red="0.19951697609999999" green="1" blue="0.018814838059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="rightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="VZW-Bv-Lcu"/>
+                                </connections>
+                            </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="uIM-OU-BNo">
                                 <color key="thumbTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -37,12 +43,6 @@
                                     <action selector="killOthers" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSo-jk-guo"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
-                                <color key="thumbTintColor" red="0.19951697609999999" green="1" blue="0.018814838059999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="rightSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="VZW-Bv-Lcu"/>
-                                </connections>
-                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
