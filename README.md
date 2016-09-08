@@ -43,7 +43,22 @@ Images:
 	
 	
 
+MQTT
 
+subscribe to:
+
+status/psd
+
+eg {“FrontLeft":39,"FrontRight":214,"SideLeft":44,"SideRight":37}	
+
+This sensor data.  the higher the value the closer the object to the respective sensor
+
+
+status/odometry
+
+e.g. {"Left":-3960,"Right":-10796}
+
+ cumulative distance (since reboot?)  Maybe use to select “viewport” as right moves forward then viewport should move left along unpacked spherical image
 
 
 
