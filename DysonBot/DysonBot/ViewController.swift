@@ -39,5 +39,22 @@ class ViewController: UIViewController {
 
         mqttClient.publishString(payload, topic: "command/wheel_speed", qos: 0, retain: false)
     }
+    
+    @IBAction func killOthers() {
+        let ipAddresses = [101,102,104,105,106,107,108,109,110,111,112,113,114,115,116]
+        
+        for address in ipAddresses {
+            _ = MQTTConfig(clientId: "cid", host: "192.168.1.\(address)", port: 1883, keepAlive: 60)
+            let payload = "{\"Left\":-200, \"Right\":-200}"
+            mqttClient.publishString(payload, topic: "command/wheel_speed", qos: 0, retain: false)
+
+        }
+        
+        // return to us
+        _ = MQTTConfig(clientId: "cid", host: "192.168.1.103", port: 1883, keepAlive: 60)
+
+    }
+    
+    
 }
 

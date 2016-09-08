@@ -29,6 +29,14 @@
                                 <frame key="frameInset" minX="16" minY="106" width="343" height="477"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aut-vg-EJd">
+                                <frame key="frameInset" minX="140" minY="329" width="94" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DON'T PANIC"/>
+                                <connections>
+                                    <action selector="killOthers" destination="BYZ-38-t0r" eventType="touchUpInside" id="JSo-jk-guo"/>
+                                </connections>
+                            </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-4000" maxValue="4000" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-jy-Tgt">
                                 <connections>
                                     <action selector="leftSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Qhc-6Q-nFc"/>
