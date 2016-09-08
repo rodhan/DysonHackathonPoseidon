@@ -4,13 +4,16 @@ import Moscapsule
 class ViewController: UIViewController {
     var leftSpeed = 0;
     var rightSpeed = 0;
+    
+    let ipAddress = "192.168.1.103"
 
     let mqttConfig = MQTTConfig(clientId: "cid", host: "192.168.1.103", port: 1883, keepAlive: 60)
     var mqttClient: MQTTClient!
+    var firstTimeAppearing = true
 
     @IBOutlet weak var rightTrack: UISlider!
     @IBOutlet weak var leftTrack: UISlider!
-    @IBOutlet weak var imageView360: UIImageView!
+    @IBOutlet weak var imageView360: DysonCameraImageView!
 
      var backLeftSensorView: UIView!
      var frontLeftSensorView: UIView!
@@ -40,6 +43,15 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
 
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if firstTimeAppearing == true {
+            firstTimeAppearing = false
+
+            imageView360.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_2))
+            imageView360.startUpdates(url: URL(string: "http://\(ipAddress):8080/frame.jpg")!)
+        }
     }
     
     @IBAction func rightSlider(_ sender: UISlider){
