@@ -6,12 +6,15 @@ Team name: Poseidon
 Tip: Don't hardcode IP
 
 [ ] Create Github project and invite others
+
 [ ] Create Xcode project
 
 
 
 Video feed over HTTP
+
 	[ ] Transform from 360
+	
 	[ ] Get bonus First tweet from camera feed
 
 
