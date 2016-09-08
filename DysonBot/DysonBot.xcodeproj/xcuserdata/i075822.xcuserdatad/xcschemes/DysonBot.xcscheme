@@ -38,6 +38,16 @@
                ReferencedContainer = "container:DysonBot.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D89759101D81CCDB0097B8E9"
+               BuildableName = "DysonBotTests.xctest"
+               BlueprintName = "DysonBotTests"
+               ReferencedContainer = "container:DysonBot.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
