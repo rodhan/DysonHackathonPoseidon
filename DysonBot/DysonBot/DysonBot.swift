@@ -8,11 +8,18 @@ struct DysonBot: Bot {
 
     init(ipAddress: String) {
         mqttConfig = MQTTConfig(clientId: "cid", host: ipAddress, port: 1883, keepAlive: 60)
+
         mqttConfig.onPublishCallback = { messageId in
             NSLog("published (mid=\(messageId))")
         }
 
+        mqttConfig.onMessageCallback = { message in
+            NSLog("message (mid=\(message.payloadString))")
+        }
+
         mqttClient = MQTT.newConnection(mqttConfig)
+
+        mqttClient.subscribe("status/psd", qos: 0)
     }
 
     func move(left: Int, right: Int) {
