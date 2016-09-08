@@ -146,7 +146,6 @@
 				TargetAttributes = {
 					D85E27BE1D819A3300B693D5 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = BUAJY8AUXM;
 						ProvisioningStyle = Automatic;
 					};
 					D85E27D21D819A3400B693D5 = {
@@ -341,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BUAJY8AUXM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DysonBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gjam.poseidon.DysonBot;
@@ -354,7 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BUAJY8AUXM;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DysonBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gjam.poseidon.DysonBot;
