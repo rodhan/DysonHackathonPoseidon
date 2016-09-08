@@ -15,6 +15,7 @@
 		D85E27CA1D819A3400B693D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D85E27C91D819A3400B693D5 /* Assets.xcassets */; };
 		D85E27CD1D819A3400B693D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85E27CB1D819A3400B693D5 /* LaunchScreen.storyboard */; };
 		D85E27D81D819A3400B693D5 /* DysonBotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E27D71D819A3400B693D5 /* DysonBotUITests.swift */; };
+		D897590A1D81C4B30097B8E9 /* Bot.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89759091D81C4B30097B8E9 /* Bot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D85E27D31D819A3400B693D5 /* DysonBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DysonBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85E27D71D819A3400B693D5 /* DysonBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DysonBotUITests.swift; sourceTree = "<group>"; };
 		D85E27D91D819A3400B693D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D89759091D81C4B30097B8E9 /* Bot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bot.swift; sourceTree = "<group>"; };
 		F64FCC8D86F901AEC4FB3062 /* Pods-DysonBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBotUITests/Pods-DysonBotUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				D85E27C91D819A3400B693D5 /* Assets.xcassets */,
 				D85E27CB1D819A3400B693D5 /* LaunchScreen.storyboard */,
 				D85E27CE1D819A3400B693D5 /* Info.plist */,
+				D89759091D81C4B30097B8E9 /* Bot.swift */,
 			);
 			path = DysonBot;
 			sourceTree = "<group>";
@@ -183,7 +186,7 @@
 				TargetAttributes = {
 					D85E27BE1D819A3300B693D5 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = PQY9C9Z38B;
+						DevelopmentTeam = BUAJY8AUXM;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D85E27C51D819A3300B693D5 /* ViewController.swift in Sources */,
+				D897590A1D81C4B30097B8E9 /* Bot.swift in Sources */,
 				D85E27C31D819A3300B693D5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +466,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PQY9C9Z38B;
+				DEVELOPMENT_TEAM = BUAJY8AUXM;
 				INFOPLIST_FILE = DysonBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.MauleyMedia.DysonBot;
@@ -477,7 +481,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = PQY9C9Z38B;
+				DEVELOPMENT_TEAM = BUAJY8AUXM;
 				INFOPLIST_FILE = DysonBot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.MauleyMedia.DysonBot;
