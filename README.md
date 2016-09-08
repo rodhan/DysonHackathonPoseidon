@@ -36,7 +36,7 @@ Notes:
 
 Images:
 
-![Alt text](blob/master/images/IMG_1359.JPG?raw=true)
+![Alt text](images/IMG_1359.JPG?raw=true)
 
 	
 	
