@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03C147E4480D291FB3D561FD /* Pods_DysonBot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03ACCB280DC715E8DF14540 /* Pods_DysonBot.framework */; };
+		B067460C208EDD17BA9487EB /* Pods_DysonBotUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F62BA7B9916351C39748366 /* Pods_DysonBotUITests.framework */; };
 		D85E27C31D819A3300B693D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E27C21D819A3300B693D5 /* AppDelegate.swift */; };
 		D85E27C51D819A3300B693D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85E27C41D819A3300B693D5 /* ViewController.swift */; };
 		D85E27C81D819A3300B693D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D85E27C61D819A3300B693D5 /* Main.storyboard */; };
@@ -26,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21E2DC053FE405218EA73D88 /* Pods-DysonBotUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBotUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBotUITests/Pods-DysonBotUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F62BA7B9916351C39748366 /* Pods_DysonBotUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DysonBotUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64B084AF3774EFAB2DF48026 /* Pods-DysonBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBot/Pods-DysonBot.debug.xcconfig"; sourceTree = "<group>"; };
+		9FACE98ECE4FE0D1D3CDA21A /* Pods-DysonBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBot/Pods-DysonBot.release.xcconfig"; sourceTree = "<group>"; };
+		D03ACCB280DC715E8DF14540 /* Pods_DysonBot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DysonBot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85E27BF1D819A3300B693D5 /* DysonBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DysonBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85E27C21D819A3300B693D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D85E27C41D819A3300B693D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +43,7 @@
 		D85E27D31D819A3400B693D5 /* DysonBotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DysonBotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85E27D71D819A3400B693D5 /* DysonBotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DysonBotUITests.swift; sourceTree = "<group>"; };
 		D85E27D91D819A3400B693D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F64FCC8D86F901AEC4FB3062 /* Pods-DysonBotUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DysonBotUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DysonBotUITests/Pods-DysonBotUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C147E4480D291FB3D561FD /* Pods_DysonBot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B067460C208EDD17BA9487EB /* Pods_DysonBotUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E44E195895A084ED9205E18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64B084AF3774EFAB2DF48026 /* Pods-DysonBot.debug.xcconfig */,
+				9FACE98ECE4FE0D1D3CDA21A /* Pods-DysonBot.release.xcconfig */,
+				21E2DC053FE405218EA73D88 /* Pods-DysonBotUITests.debug.xcconfig */,
+				F64FCC8D86F901AEC4FB3062 /* Pods-DysonBotUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6BEBF91B4CF114E3ACA24FA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03ACCB280DC715E8DF14540 /* Pods_DysonBot.framework */,
+				3F62BA7B9916351C39748366 /* Pods_DysonBotUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D85E27B61D819A3300B693D5 = {
 			isa = PBXGroup;
 			children = (
 				D85E27C11D819A3300B693D5 /* DysonBot */,
 				D85E27D61D819A3400B693D5 /* DysonBotUITests */,
 				D85E27C01D819A3300B693D5 /* Products */,
+				1E44E195895A084ED9205E18 /* Pods */,
+				6BEBF91B4CF114E3ACA24FA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85E27DC1D819A3400B693D5 /* Build configuration list for PBXNativeTarget "DysonBot" */;
 			buildPhases = (
+				159285D69EA350BADAC6EC82 /* [CP] Check Pods Manifest.lock */,
 				D85E27BB1D819A3300B693D5 /* Sources */,
 				D85E27BC1D819A3300B693D5 /* Frameworks */,
 				D85E27BD1D819A3300B693D5 /* Resources */,
+				7AFCD98667B7132B1859F2E9 /* [CP] Embed Pods Frameworks */,
+				07DA24B2E60658BAE7CF36BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85E27DF1D819A3400B693D5 /* Build configuration list for PBXNativeTarget "DysonBotUITests" */;
 			buildPhases = (
+				6FDA271454737382C2795E4D /* [CP] Check Pods Manifest.lock */,
 				D85E27CF1D819A3400B693D5 /* Sources */,
 				D85E27D01D819A3400B693D5 /* Frameworks */,
 				D85E27D11D819A3400B693D5 /* Resources */,
+				9E1A159B5E96DAF8B39EA185 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,11 +183,13 @@
 				TargetAttributes = {
 					D85E27BE1D819A3300B693D5 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					D85E27D21D819A3400B693D5 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = BUAJY8AUXM;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D85E27BE1D819A3300B693D5;
 					};
@@ -194,6 +233,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07DA24B2E60658BAE7CF36BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DysonBot/Pods-DysonBot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		159285D69EA350BADAC6EC82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FDA271454737382C2795E4D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AFCD98667B7132B1859F2E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DysonBot/Pods-DysonBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E1A159B5E96DAF8B39EA185 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DysonBotUITests/Pods-DysonBotUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D85E27BB1D819A3300B693D5 /* Sources */ = {
@@ -261,6 +378,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,6 +429,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -338,7 +457,9 @@
 		};
 		D85E27DD1D819A3400B693D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64B084AF3774EFAB2DF48026 /* Pods-DysonBot.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DysonBot/Info.plist;
@@ -351,7 +472,9 @@
 		};
 		D85E27DE1D819A3400B693D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FACE98ECE4FE0D1D3CDA21A /* Pods-DysonBot.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DysonBot/Info.plist;
@@ -364,6 +487,7 @@
 		};
 		D85E27E01D819A3400B693D5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21E2DC053FE405218EA73D88 /* Pods-DysonBotUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BUAJY8AUXM;
@@ -378,6 +502,7 @@
 		};
 		D85E27E11D819A3400B693D5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F64FCC8D86F901AEC4FB3062 /* Pods-DysonBotUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = BUAJY8AUXM;
@@ -409,6 +534,7 @@
 				D85E27DE1D819A3400B693D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D85E27DF1D819A3400B693D5 /* Build configuration list for PBXNativeTarget "DysonBotUITests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +543,7 @@
 				D85E27E11D819A3400B693D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
